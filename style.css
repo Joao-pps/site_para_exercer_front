@@ -116,6 +116,7 @@ body {
     transition: 300ms
 }
 
+.main__section2 .main__content .main__block .main__text .main__butom:is(:hover),
 .section__bloco .section__informations .section__form .section__divizion .section__butom:is(:hover) {
     cursor: pointer;
     background-color: var(--orange);
@@ -128,7 +129,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     background-color: var(--background_main);
 }
 
@@ -150,6 +151,7 @@ body {
     opacity: 0.2;
     transition: 300ms;
 }
+
 .main .main__section .main__content .main__box .main__image:is(:hover),
 .main .main__section .main__content #main__image--square:is(:hover) {
     opacity: 1.0;
@@ -163,12 +165,66 @@ body {
 
 .main .main__section .main__content {
     display: flex;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .main .main__section .main__content .main__box {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     width: 100%;
 }
+
+/* Section 3 */
+
+.main__section2 {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.main__section2 .main__content {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.main__section2 .main__content .main__block {
+    width: 100%;
+    background-color: var(--background_heading);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section2 .main__content .main__image {
+    width: 100%;
+    max-height: 250px;
+    height: 100%
+}
+
+.main__section2 .main__content .main__block .main__text {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__section2 .main__content .main__block .main__text .main__title {
+    font-weight: 500;
+}
+
+.main__paragraph--gray {
+    color: var(--background_email)
+}
+
+.main__section2 .main__content .main__block .main__text .main__butom {
+    align-self: flex-start;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--background_heading);
+    color: var(--background_main);
+    transition: 300ms
+}
+
+/* Section 4 */
