@@ -89,11 +89,11 @@ body {
 .section__bloco .section__informations .section__form {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .section__bloco .section__informations .section__form .section__divizion {
-    width: 385px;
+    width: 378px;
     max-width: 100%;
 }
 
@@ -102,7 +102,8 @@ body {
 }
 
 .section__bloco .section__informations .section__form .section__divizion .section__input {
-    padding: 0.5rem 0rem;
+    padding: 0.7rem 0rem;
+    padding-left: 0.5rem;
     width: 100%;
     border: 1px solid var(--background_main);
 }
@@ -112,7 +113,13 @@ body {
     border: none;
     background-color: var(--background_email);
     color: var(--background_heading);
-    font-size: 1rem
+    font-size: 1rem;
+    transition: 300ms
+}
+
+.section__bloco .section__informations .section__form .section__divizion .section__butom:is(:hover) {
+    cursor: pointer;
+    background-color: var(--orange);
 }
 
 /* Segunda sessão */
