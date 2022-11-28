@@ -129,7 +129,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     background-color: var(--background_main);
 }
 
@@ -175,7 +175,7 @@ body {
     width: 100%;
 }
 
-/* Section 3 */
+/* main__Section 2 */
 
 .main__section2 {
     width: 80%;
@@ -227,4 +227,115 @@ body {
     transition: 300ms
 }
 
-/* Section 4 */
+/* main__Section 3 */
+
+.main__section3 {
+    width: 80%;
+    background-color: var(--background_email)
+}
+
+.main__section3 .main__box {
+    padding: 2rem 1rem 1rem 1rem;;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__section3 .main__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section3 .section__title,
+.main__section3 .main__paragraph,
+.main__section3 .main__form .main__paragraph {
+    color: var(--background_heading);
+    font-weight: 500;
+}
+
+.main__section3 .main__form .main__input {
+    padding: 0.8rem
+}
+
+.main__section3 .main__form .main__butom {
+    border: none;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    align-self: flex-start;
+    background-color: var(--orange);
+    color: var(--background_heading);
+    cursor: pointer;
+}
+
+/* main__section 4 */
+.main__section4 {
+    width: 80%
+}
+
+.main__section4 .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__section4 .section__content .section__title {
+    font-weight: 500;
+
+}
+
+.main__section4 .section__content .section__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main__section4 .section__content .section__box .main__icon {
+    padding-right: 1rem;
+}
+.main__section4 .section__content .section__box .section__paragraph {
+    /* align-self: flex-start; */
+}
+
+.main__section4 .section__content .section__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.main__section4 .section__content .section__form .main__input {
+    padding: 0.8rem
+}
+
+.main__section4 .section__content .section__form .main__butom {
+    align-self: flex-start;
+    border: none;
+    padding: 0.8rem 2rem;
+    background-color: var(--background_icon);
+    color: var(--background_heading);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0rem;
+    margin: 2rem 0
+}
+
+/* Footer */
+
+.footer .footer__paragraph {
+    color: var(--background_email)
+}
+
+.footer .footer__box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer .footer__box .footer__icon {
+    color: var(--background_email);
+}
