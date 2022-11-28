@@ -42,7 +42,7 @@ body {
 
 .section .section__bloco {
     box-shadow: 1px 1px 10px black;
-    width: 70%;
+    width: 80%;
     background-color: var(--background_heading);
     display: flex;
     flex-direction: column;
@@ -351,7 +351,14 @@ body {
 
 /* Medias Querry */
 
-@media(max-width: 768px) {
+@media(max-width: 1366px) {
+    .main .main__section .main__content .main__box2 .main__image,
+    .main .main__section .main__content .main__box1 #main__image--square {
+        opacity: 1.0;
+    }
+}
+
+@media(max-width: 850px) {
     .main {
         gap: 1rem;
     }
@@ -390,9 +397,14 @@ body {
     .main__section2 .main__content {
         gap: 1rem;
     }
+
+    .main .main__section .main__content .main__box2 .main__image,
+    .main .main__section .main__content .main__box1 #main__image--square {
+        opacity: 1.0;
+    }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     .main {
         gap: 1.5rem;
     }
@@ -414,16 +426,14 @@ body {
         width: 100%
     }
 
-    .main .main__section .main__content{
+    .main .main__section .main__content {
         flex-direction: column;
     }
 
     .main__section2 .main__content {
         flex-direction: column
     }
-}
 
-@media(max-width: 320px) {
     .main .main__section .main__content .main__box2 {
         flex-direction: column
     }
