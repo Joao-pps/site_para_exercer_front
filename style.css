@@ -1,4 +1,4 @@
-/* definindo variaveis com valor de coloraçoes pra facilitar a troca, e a reutilização. */
+/* definindo variaveis com valor de coloraçoes pra facilitar a alterção, e a reutilização. */
 :root {
     --background_heading: #f5f5f5;
     --orange: #ff3108;
@@ -209,7 +209,7 @@ body {
 
 .main__section2 .main__content .main__image {
     width: 100%;
-    max-height: 250px;
+    max-height: 280px;
     height: 100%
 }
 
