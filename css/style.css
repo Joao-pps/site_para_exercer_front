@@ -1,0 +1,446 @@
+/* definindo variaveis com valor de coloraçoes pra facilitar a alterção, e a reutilização. */
+:root {
+    --background_heading: #f5f5f5;
+    --orange: #ff3108;
+    --background_main: #DCDCDC;
+    --background_email: #666666;
+    --background_icon: #111111;
+}
+
+/* Configuraçoes para pagina */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto',sans-serif
+}
+
+body {
+    width: 100%;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: var(--background_heading);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2em;
+}
+
+.header__icon {
+    color: var(--orange)
+}
+
+/* primeira sessão */
+.section {
+    background-image: url(../img/architecture-4685608_1920.jpg);
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .section__bloco {
+    box-shadow: 1px 1px 10px black;
+    width: 80%;
+    background-color: var(--background_heading);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.section .section__bloco .section__caixa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__bloco .section__caixa .section__item {
+    width: 100%;
+    padding: 0.8rem 0rem;
+    background-color: var(--background_icon);
+}
+
+.section__bloco .section__caixa .section__item:first-child {
+    background-color: var(--orange)
+}
+
+.section__bloco .section__caixa .section__item .section__paragraph {
+    color: var(--background_heading);
+    text-align: center;
+}
+
+.section__bloco .section__caixa .section__item .section__paragraph .section__icon {
+    padding-right: 0.8rem;
+}
+
+.section__bloco .section__informations {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.section__bloco .section__informations .section__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.section__bloco .section__informations .section__form .section__divizion {
+    width: 47.5%;
+}
+
+.section__bloco .section__informations .section__form .section__divizion .section__paragraph--padding {
+    padding-bottom: 5px;
+}
+
+.section__bloco .section__informations .section__form .section__divizion .section__input {
+    padding: 0.7rem 0rem;
+    padding-left: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--background_main);
+}
+
+.section__bloco .section__informations .section__form .section__divizion .section__butom {
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--background_email);
+    color: var(--background_heading);
+    font-size: 1rem;
+    transition: 300ms
+}
+
+.main__section2 .main__content .main__block .main__text .main__butom:is(:hover),
+.section__bloco .section__informations .section__form .section__divizion .section__butom:is(:hover) {
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+/* main e primeira seção */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--background_main);
+}
+
+.main .main__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+
+}
+
+.main .main__section .main__title {
+    padding-top: 2rem;
+}
+
+.main .main__section .main__content .main__box1 {
+    width: 100%;
+    position: relative;
+}
+
+.main .main__section .main__content .main__box2 .main__cap .main__paragraph,
+.main .main__section .main__content .main__box1 .main__paragraph {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--background_heading);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.main .main__section .main__content .main__box1 #main__image--square {
+    width: 100%;
+    height: 100%;
+    filter: invert(35%);
+    position: relative;
+    transition: 500ms;
+}
+
+.main .main__section .main__content .main__box2 .main__cap .main__image:is(:hover),
+.main .main__section .main__content .main__box1 #main__image--square:is(:hover) {
+    filter: invert(5%);
+    transition: 500ms;
+}
+
+.main .main__section .main__content .main__box2 .main__cap .main__image {
+    width: 100%;
+    height: 100%;
+    filter: invert(35%);
+    transition: 500ms;
+}
+
+.main .main__section .main__content {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.main .main__section .main__content .main__box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.main .main__section .main__content .main__box2 .main__cap {
+    width: 48%;
+    position: relative;
+}
+
+/* main__Section 2 */
+
+.main__section2 {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.main__section2 .main__content {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.main__section2 .main__content .main__block {
+    width: 100%;
+    background-color: var(--background_heading);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section2 .main__content .main__image {
+    width: 100%;
+    height: 100%;
+}
+
+.main__section2 .main__content .main__block .main__text {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__paragraph--gray {
+    color: var(--background_email)
+}
+
+.main__section2 .main__content .main__block .main__text .main__butom {
+    align-self: flex-start;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--background_heading);
+    color: var(--background_main);
+    transition: 300ms
+}
+
+/* main__Section 3 */
+
+.main__section3 {
+    width: 80%;
+    background-color: var(--background_email)
+}
+
+.main__section3 .main__box {
+    padding: 2rem 1rem 1rem 1rem;
+    ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__section3 .main__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section3 .section__title,
+.main__section3 .main__paragraph,
+.main__section3 .main__form .main__paragraph {
+    color: var(--background_heading);
+}
+
+.main__section3 .main__form .main__input {
+    padding: 0.8rem
+}
+
+.main__section3 .main__form .main__butom {
+    border: none;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    align-self: flex-start;
+    background-color: var(--orange);
+    color: var(--background_heading);
+    cursor: pointer;
+}
+
+/* main__section 4 */
+.main__section4 {
+    width: 80%
+}
+
+.main__section4 .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__section4 .section__content .section__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__section4 .section__content .section__box .main__icon {
+    padding-right: 1rem;
+}
+
+.main__section4 .section__content .section__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.main__section4 .section__content .section__form .main__input {
+    padding: 0.8rem
+}
+
+.main__section4 .section__content .section__form .main__butom {
+    align-self: flex-start;
+    border: none;
+    padding: 0.8rem 2rem;
+    background-color: var(--background_icon);
+    color: var(--background_heading);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0rem;
+    margin: 2rem 0
+}
+
+/* Footer */
+
+.footer .footer__paragraph {
+    color: var(--background_email)
+}
+
+.footer .footer__box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer .footer__box .footer__icon {
+    color: var(--background_email);
+}
+
+/* Medias Querry */
+
+@media(max-width: 1224px) {
+    .main {
+        gap: 1rem;
+    }
+
+    .main__section4,
+    .main__section3,
+    .main__section2,
+    .main .main__section {
+        width: 90%;
+        height: auto;
+    }
+
+    .section .section__bloco {
+        width: auto;
+    }
+
+    .section .section__bloco .section__informations .section__form .section__divizion {
+        width: 47.5%;
+    }
+
+    .main .main__section .main__content {
+        gap: 0.5rem;
+    }
+    
+    .main .main__section .main__content .main__box2 {
+        gap: 0.5rem;
+    }
+
+    .main .main__section .main__content .main__box2 .main__cap {
+        width: 47.5%;
+    }
+
+    .main .main__section .main__content .main__box2 .main__cap .main__image {
+        width: 100%
+    }
+
+    .main__section2 .main__content {
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .main {
+        gap: 1.5rem;
+    }
+
+    .section {
+        display: initial;
+    }
+
+    .section .section__bloco {
+        box-shadow: initial;
+        margin: initial;
+    }
+
+    .section .section__bloco .section__informations {
+        padding: 2rem 1.3rem;
+    }
+
+    .section .section__bloco .section__informations .section__form .section__divizion {
+        width: 100%
+    }
+
+    .main .main__section .main__content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main .main__section .main__content .main__box2 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main .main__section2 .main__content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main .main__section .main__content .main__box2 .main__cap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .main__section .main__content .main__box2 .main__cap .main__image {
+        width: 100%
+    }
+
+    .main .main__section .main__content .main__box2 .main__cap .main__image:is(:hover),
+    .main .main__section .main__content .main__box1 #main__image--square:is(:hover) {
+        filter: inherit;
+        transition: 0s;
+    }
+}
