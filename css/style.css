@@ -76,7 +76,7 @@ body {
 }
 
 .section__bloco .section__informations {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -84,22 +84,27 @@ body {
 
 .section__bloco .section__informations .section__form {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 1.3rem;
 }
 
-.section__bloco .section__informations .section__form .section__divizion {
-    width: 47.5%;
+.section__bloco .section__informations .section__form .section__content {
+    display: flex;
+    width: 100%;
+    gap: 1.3rem;
 }
 
-.section__bloco .section__informations .section__form .section__divizion .section__paragraph--padding {
+.section__bloco .section__informations .section__form .section__content .section__divizion {
+    width: 100%;
+}
+
+.section__bloco .section__informations .section__form .section__content .section__divizion .section__paragraph--padding {
     padding-bottom: 5px;
 }
 
-.section__bloco .section__informations .section__form .section__divizion .section__input {
-    padding: 0.7rem 0rem;
-    padding-left: 0.5rem;
-    width: 100%;
+.section__bloco .section__informations .section__form .section__content .section__divizion .section__input {
+    padding: 0.7rem 0rem 0.7rem 0.3rem;
+    width: 99%;
     border: 1px solid var(--background_main);
 }
 
@@ -364,11 +369,11 @@ body {
     }
 
     .section .section__bloco {
-        width: auto;
+        width: 100%;
     }
 
-    .section .section__bloco .section__informations .section__form .section__divizion {
-        width: 47.5%;
+    .section .section__bloco .section__informations .section__form .section__content .section__divizion {
+        width: 100%
     }
 
     .main .main__section .main__content {
@@ -390,11 +395,17 @@ body {
     .main__section2 .main__content {
         gap: 1rem;
     }
+    
 }
 
-@media(max-width: 579px) {
+@media(max-width: 570px) {
     .main {
         gap: 1.5rem;
+    }
+
+    .main .main__section .main__content {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .section {
@@ -406,17 +417,8 @@ body {
         margin: initial;
     }
 
-    .section .section__bloco .section__informations {
-        padding: 2rem 1.3rem;
-    }
-
-    .section .section__bloco .section__informations .section__form .section__divizion {
-        width: 100%
-    }
-
-    .main .main__section .main__content {
+    .section__bloco .section__informations .section__form .section__content {
         flex-direction: column;
-        gap: 1rem;
     }
 
     .main .main__section .main__content .main__box2 {
@@ -438,9 +440,4 @@ body {
         width: 100%
     }
 
-    .main .main__section .main__content .main__box2 .main__cap .main__image:is(:hover),
-    .main .main__section .main__content .main__box1 #main__image--square:is(:hover) {
-        filter: inherit;
-        transition: 0s;
-    }
 }
