@@ -1,5 +1,5 @@
 
-# Título do Projeto
+# Pagiana de viagens
 
 Basicamente esse projeto foi uma maneira de exercitar meu lado do client side, ou famoso lado do front end.
 
