@@ -1,0 +1,278 @@
+/* primeira sessão */
+.main__section {
+    background-image: url("../assets/img/architecture-4685608_1920.jpg");
+    width: 100%;
+    height: 38em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__bloco {
+    box-shadow: 1px 1px 10px black;
+    width: 80%;
+    background-color: var(--background_heading);
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.bloco__lista {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background_icon);
+}
+
+.lista__item {
+    width: 100%;
+    list-style-type: none;
+}
+
+.lista__item:first-child {
+    background-color: var(--orange)
+}
+
+.item__paragraph {
+    color: var(--background_heading);
+    text-align: center;
+}
+
+.item__icon {
+    padding-right: 0.8em;
+}
+
+.section__bloco--form {
+    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.bloco__content {
+    display: flex;
+    width: 100%;
+    gap: 1.3em;
+}
+
+.content__input {
+    width: 100%;
+}
+
+.input__texto {
+    padding: 0.7em 0em 0.7em 0.3em;
+    width: 99%;
+    border: 1px solid var(--background_main);
+}
+
+.input__butom {
+    padding: 0.7em 1em;
+    border: none;
+    background-color: var(--background_email);
+    color: var(--background_heading);
+    font-size: 1em;
+    transition: 300ms
+}
+
+/* Segunda seção */
+
+.div__centralizadora {
+    margin: 3em auto;
+    width: 80%;
+}
+
+.main__section--desconto {
+    margin-bottom: 2em;
+}
+
+.section__content--teste {
+    display: grid;
+    grid-template-areas:
+    'box1 box1 box2 box2';
+    justify-content: center;
+    gap: .8em
+}
+
+.content__box {
+    grid-area: box1;
+}
+
+.box__image--grande,
+.content__imagem {
+    width: 100%;
+    height: 100%;
+    filter: invert(35%);
+    transition: filter 0.3s;
+}
+
+.imagem:is(:hover) {
+    filter: invert(5%);
+}
+
+.main__box--imagens {
+    grid-area: box2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em;
+}
+
+.content__box,
+.box__imagem {
+    position: relative;
+}
+
+.content__paragrafo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--background_heading);
+    text-transform: capitalize;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+/* Terceira sessão */
+
+/* main__Section 2 */
+
+.main__section--natureza {
+    margin-bottom: 2em;
+}
+
+.section__content--cards {
+    display: flex;
+    justify-content: center;
+    gap: .8em;
+}
+
+/* Sessão 3 */
+
+.main__section--contato {
+    background-color: var(--background_email);
+    padding: 1.3em 1em;
+    color: var(--background_heading);
+    margin-bottom: 2em;
+}
+
+.form__paragraph {
+    margin-bottom: 0;
+}
+
+.section__form--contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    padding: 0.8em;
+}
+
+.form__butom {
+    align-self: start;
+    border: none;
+    display: block;
+    margin-top: 1em;
+    padding: 0.8em 2em;
+    background-color: var(--orange);
+    color: var(--background_heading);
+    cursor: pointer;
+}
+
+/* Section 4 */
+
+.main__section--endereco {
+    margin-bottom: 2em;
+}
+
+.endereco__lista {
+    padding-left: 0;
+}
+
+.endereco__item {
+    list-style-type: none;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.endereco__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.form__butom--preto {
+    background-color: var(--background_icon);
+}
+
+/* Medias Query */
+
+@media screen and (max-width: 760px) {
+    .div__centralizadora {
+        width: 93%;
+    }
+
+    .section__bloco {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section__bloco {
+        margin: 0;
+        box-shadow: none;
+        background-color: initial;
+    }
+
+    .bloco__content {
+        flex-direction: column;
+    }
+
+    .input__paragraph {
+        margin: 0;
+    }
+
+    .main__section {
+        background-image: none;
+        background-color: white;
+        height: auto;
+    }
+
+    .bloco__lista {
+        justify-content: start;
+    }
+
+    .lista__item  {
+        width: 23%;
+    }
+
+    .section__content--teste {
+        grid-template-areas: 
+        'box1 box1 box1 box1'
+        'box2 box2 box2 box2'
+    }
+
+    .main__box--imagens {
+        grid-template-columns: 1fr;
+        gap: .8em;
+    }
+
+    .section__content--cards {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .lista__item {
+        width: 100%;
+    }
+}

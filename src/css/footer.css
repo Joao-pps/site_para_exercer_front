@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    padding: 2em 0em;
+}
+
+.footer .footer__paragraph {
+    color: var(--background_email)
+}
+
+.footer .footer__box .footer__icon {
+    color: var(--background_email);
+    margin: 0 .2em;
+}

@@ -10,11 +10,16 @@
     <meta name="keyords" content="viagem, familia, ferias">
     <title>Exercicio site</title>
     <!-- font do google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- meu arquivo CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- icons fontawesome -->
     <script src="https://kit.fontawesome.com/7fb8390597.js" crossorigin="anonymous"></script>
+    <!-- meu arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Script -->
+    <script src="components/CardComponent.js" defer></script>
 </head>
 
 <body>
@@ -24,136 +29,150 @@
         <i class="fa-solid fa-magnifying-glass header__icon" title="Lupa de pesquisa"></i>
     </header>
     <!-- primeira sessão com uma foto tampando sua maior parte -->
-    <section class="section" title="Foto de fundo com arquiquetura de pedras">
-        <div class="section__bloco">
-            <div class="section__caixa">
-                <div class="section__item">
-                    <p class="section__paragraph"><i class="fa-solid fa-plane-up section__icon" title="icon de um avião"></i>Flight</p>
-                </div>
-                <div class="section__item">
-                    <p class="section__paragraph"><i class="fa-solid fa-bed section__icon" title="icon de uma pessoa confortavel"></i>Hotel</p>
-                </div>
-                <div class="section__item">
-                    <p class="section__paragraph"><i class="fa-solid fa-car section__icon" title="icon de um altomovel"></i>Rental</p>
-                </div>
-            </div>
+    <main class="" title="Parte principal da pagina">
+        <section class="main__section" title="Foto de fundo com arquiquetura de pedras">
+            <div class="section__bloco">
+                <ul class="bloco__lista">
+                    <li class="lista__item">
+                        <p class="item__paragraph"><i class="fa-solid fa-plane-up item__icon"
+                                title="icon de um avião"></i>Flight</p>
+                    </li>
+                    <li class="lista__item">
+                        <p class="item__paragraph"><i class="fa-solid fa-bed item__icon"
+                                title="icon de uma pessoa confortavel"></i>Hotel</p>
+                    </li>
+                    <li class="lista__item">
+                        <p class="item__paragraph"><i class="fa-solid fa-car item__icon"
+                                title="icon de um altomovel"></i>Rental</p>
+                    </li>
+                </ul>
 
 
-            <div class="section__informations">
-                <h2 class="section__title">Travel the world with us</h2>
-                <form class="section__form">
-                    <div class="section__content">
-                        <div class="section__divizion">
-                            <p for="from" class="section__paragraph--padding">From</p>
-                            <input class="section__input" type="text" id="from" placeholder="Departing from" required>
+                <div class="section__bloco--form">
+                    <h2 class="bloco__title">Travel the world with us</h2>
+                    <form class="bloco__form">
+                        <div class="bloco__content">
+                            <div class="content__input">
+                                <p for="from" class="input__paragraph">From</p>
+                                <input class="input__texto" type="text" id="from" placeholder="Departing from" required>
+                            </div>
+                            <div class="content__input">
+                                <p for="to" class="input__paragraph">To</p>
+                                <input class="input__texto" type="text" id="from" placeholder="Arrinving at" required>
+                            </div>
                         </div>
-                        <div class="section__divizion">
-                            <p for="to" class="section__paragraph--padding">To</p>
-                            <input class="section__input" type="text" id="from" placeholder="Arrinving at" required>
+                        <div class="content__input">
+                            <input type="submit" class="input__butom" value="Seach and find dates">
                         </div>
-                    </div>
-                    <div class="section__divizion">
-                        <button type="submit" class="section__butom">Seach and find dates</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Principal -->
-    <main class="main" title="Parte principal da pagina">
-        <section class="main__section" title="seção de imagens de locais">
-            <h2 class="main__title">Good offers Right now </h2>
-            <p class="main__paragrph">Up to <strong>50%</strong> descont</p>
-            <div class="main__content">
-                <div class="main__box1">
-                    <img id="main__image--square" src="./img/beach-418742_1280.jpg" alt="Imagem de uma praia com montanhas">
-                    <p class="main__paragraph">beach</p>
-                </div>
-                <div class="main__box2">
-                    <div class="main__cap">
-                        <img class="main__image" src="./img/greece-1594689_1280.jpg" alt="Imagem de uma arquiquetura de pilares Gregos">
-                        <p class="main__paragraph">roma</p>
-                    </div>
-                    <div class="main__cap">
-                        <img class="main__image" src="./img/mountains-190055_1280.jpg" alt="Imagem de uma vista do sol em um lugar montanhoso">
-                        <p class="main__paragraph">argentina</p>
-                    </div>
-                    <div class="main__cap">
-                        <img class="main__image" src="./img/hamburg-g8701e9456_1280.jpg" alt="Imagem de hamburgo">
-                        <p class="main__paragraph">hamburgo</p>
-                    </div>
-                    <div class="main__cap">
-                        <img class="main__image" src="./img/woman-591576_1280.jpg" alt="Imagem de uma mulher radiada com o sol de fundo">
-                        <p class="main__paragraph">amontada</p>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
-        <article class="main__section2" title="seção de lugares com preços estipulados">
-            <h2 class="main__title">Explore Nature</h2>
-            <p class="main__paragraph">Travel with us and nature at its finest</p>
-            <div class="main__content">
-                <div class="main__block">
-                    <img class="main__image" src="./img/sea-164989_1280.jpg" alt="Imagem de um praia a noitecendo">
-                    <div class="main__text">
-                        <h3 class="main__title">Weast Coast, Normay</h3>
-                        <p class="main__paragraph"><span class="main__paragraph--gray">Roundtrip from $79</span></p>
-                        <p>Praesent tincidunt sed tellus ut rutruim sed vitae justo</p>
-                        <button class="main__butom">Buy Tickets</button>
+        <div class="div__centralizadora">
+            <section class="main__section--desconto" title="seção de imagens de locais">
+                <h2 class="section__title--desconto">Good offers Right now </h2>
+                <p class="main__paragrph">Up to <strong>50%</strong> descont</p>
+                <div class="section__content--teste">
+                    <div class="content__box">
+                        <img class="box__image--grande imagem" src="./assets/img/beach-418742_1280.jpg"
+                            alt="Imagem de uma praia com montanhas">
+                        <p class="content__paragrafo">beach</p>
+                    </div>
+                    <div class="main__box--imagens">
+                        <div class="box__imagem">
+                            <img class="content__imagem imagem" src="./assets/img/greece-1594689_1280.jpg"
+                                alt="Imagem de uma arquiquetura de pilares Gregos">
+                            <p class="content__paragrafo imagem">roma</p>
+                        </div>
+                        <div class="box__imagem">
+                            <img class="content__imagem imagem" src="./assets/img/mountains-190055_1280.jpg"
+                                alt="Imagem de uma vista do sol em um lugar montanhoso">
+                            <p class="content__paragrafo imagem">argentina</p>
+                        </div>
+                        <div class="box__imagem">
+                            <img class="content__imagem imagem" src="./assets/img/hamburg-g8701e9456_1280.jpg"
+                                alt="Imagem de hamburgo">
+                            <p class="content__paragrafo imagem">hamburgo</p>
+                        </div>
+                        <div class="box__imagem">
+                            <img class="content__imagem imagem" src="./assets/img/woman-591576_1280.jpg"
+                                alt="Imagem de uma mulher radiada com o sol de fundo">
+                            <p class="content__paragrafo imagem">Ceara</p>
+                        </div>
                     </div>
                 </div>
-                <div class="main__block">
-                    <img class="main__image" src="./img/sea-g9c0255bed_1280.jpg" alt="Imagem de montanhas">
-                    <div class="main__text">
-                        <h3 class="main__title">Moutains, Austria</h3>
-                        <p class="main__paragraph"><span class="main__paragraph--gray">one-way from $39</span></p>
-                        <p>Praesent tincididunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="main__butom">Buy Tickets</button>
-                    </div>
+            </section>
+            <section class="main__section--natureza" title="seção de lugares com preços estipulados">
+                <h2 class="section__title">Explore Nature</h2>
+                <p class="section__paragraph">Travel with us and nature at its finest</p>
+                <div class="section__content--cards">
+                    <card-news    
+                        src="./assets/img/sea-164989_1280.jpg"
+                        alt=""
+                        titulo="Weast Coast, Normay"
+                        span="Roundtrip from $79"
+                        conteudo="Praesent tincidunt sed tellus ut rutruim sed vitae justo"
+                        botao="Buy Tickets"
+                    ></card-news>  <!-- Conponentes -->
+                    <card-news
+                        src="./assets/img/sea-g9c0255bed_1280.jpg"
+                        alt="Imagem de montanhas"
+                        titulo="Moutains, Austria"
+                        span="one-way from $39"
+                        conteudo="Praesent tincididunt sed tellus ut rutrum sed vitae justo."
+                        botao="Buy Tickets"
+                    ></card-news>
                 </div>
-            </div>
-        </article>
-        <section class="main__section3" title="seção de envio de email">
-            <div class="main__box">
-                <h1 class="section__title">Get the best offers first!</h1>
+            </section>
+            <section class="main__section--contato" title="seção de envio de email">
+                <h2 class="section__title">Get the best offers first!</h2>
                 <p class="main__paragraph">join our newsletter</p>
-                <form class="main__form">
-                    <p class="main__paragraph">E-mail</p>
-                    <input class="main__input" type="email" id="email" placeholder="your Email address" required>
-                    <button class="main__butom">Subscriber</button>
+                <form class="section__form--contato">
+                    <p class="form__paragraph">E-mail</p>
+                    <input class="form__input" type="email" id="email" placeholder="your Email address" required>
+                    <button class="form__butom">Subscriber</button>
                 </form>
-            </div>
-        </section>
-        <section class="main__section4" title="seção de contato">
-            <address class="section__content">
-                <h1 class="section__title">Contact</h1>
-                <p>Let us book your next trip!</p>
-                <div class="section__box">
-                    <p class="section__paragraph"><i class="fa-solid fa-location-dot main__icon" title="icone de localiação"></i>Chicago. US</p>
-                    <p class="section__paragraph"><i class="fa-solid fa-phone  main__icon" title="icone de telefone"></i>Phone: +00 151515</p>
-                   <p class="section__paragraph"> <i class="fa-solid fa-envelope  main__icon" title="icone de envelope"></i>Email: mailto@mail.com</p>
-                </div>
-                <form class="section__form">
-                    <input class="main__input" type="name" placeholder="Name" required>
-                    <input class="main__input" type="email" placeholder="Email" required>
-                    <input class="main__input" type="text" placeholder="Message" required>
-                    <button class="main__butom">Send Message</button>
-                </form>
-            </address>
-        </section>
-        <footer class="footer" title="final da pagina">
-            <p class="footer__paragraph">Find Us On</p>
-            <div class="footer__box">
-                <i class="fa-brands fa-square-facebook footer__icon" title="icone fecebook"></i>
-                <i class="fa-brands fa-instagram footer__icon" title="icone instagram"></i>
-                <i class="fa-brands fa-square-snapchat footer__icon" title="icone snapchat"></i>
-                <i class="fa-brands fa-pinterest-p footer__icon" title="icone pinterest"></i>
-                <i class="fa-brands fa-twitter footer__icon" title="icone twitter"></i>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-sousa-042708245/" target="_blank"><i class="fa-brands fa-linkedin-in footer__icon" title="icone linkedin"></i></a>
-            </div>
-            <p class="footer__paragraph">Feito por John</p>
-        </footer>
+            </section>
+            <section class="main__section--endereco" title="seção de contato">
+                <address class="section__endereco">
+                    <h2 class="endereco__title">Contact</h2>
+                    <p class="endereco__paragraph">Let us book your next trip!</p>
+                    <ol class="endereco__lista">
+                        <li class="endereco__item">
+                            <i class="fa-solid fa-location-dot item__icon"title="icone de localiação"></i>
+                            <p class="item__paragraph--contato">Chicago. US</p>
+                        </li>
+                        <li class="endereco__item">
+                            <i class="fa-solid fa-phone  main__icon"title="icone de telefone"></i>
+                            <p class="item__paragraph--contato">Phone: +00 151515</p>
+                        </li>
+                        <li class="endereco__item">
+                            <i class="fa-solid fa-envelope  main__icon" title="icone de envelope"></i>
+                            <p class="item__paragraph--contato">Email: mailto@mail.com</p>
+                        </li>
+                    </ol>
+                    <form class="endereco__form">
+                        <input class="form__input" type="name" placeholder="Name" required>
+                        <input class="form__input" type="email" placeholder="Email" required>
+                        <input class="form__input" type="text" placeholder="Message" required>
+                        <button class="form__butom form__butom--preto">Send Message</button>
+                    </form>
+                </address>
+            </section>
+        </div>
     </main>
+    <footer class="footer" title="rodapé da pagina">
+        <p class="footer__paragraph">Find Us On</p>
+        <div class="footer__box">
+            <a href="" target="_blank" title="icone fecebook"><i class="fa-brands fa-square-facebook footer__icon"></i></a>
+            <a href="" target="_blank" title="icone instagram"><i class="fa-brands fa-instagram footer__icon"></i></a>
+            <a href="" target="_blank" title="icone snapchat"><i class="fa-brands fa-square-snapchat footer__icon"></i></a>
+            <a href="" target="_blank" title="icone pinterest"><i class="fa-brands fa-pinterest-p footer__icon"></i></a>
+            <a href="" target="_blank" title="icone twitter"><i class="fa-brands fa-twitter footer__icon"></i></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-sousa-042708245/" target="_blank" title="icone linkedin"><i class="fa-brands fa-linkedin-in footer__icon"></i></a>
+        </div>
+        <p class="footer__paragraph">Feito por John</p>
+    </footer>
 </body>
 
 </html>
